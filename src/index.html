@@ -15,191 +15,207 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function() {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);    
+        }
+
+    </script>
     <header>
         <nav>
             <div class="logo">Андрей Браун</div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <main>
+        <section class="main">
 
-    <div class="main">
-
-        <div class="title_container">
-            <h1>Привет<br>Я Андрей Браун</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
-        </div>
-    </div>
-
-    <div class="aboutMe">
-        <h3>Обо мне</h3>
-        <img src="img/photo.png" alt="Фото Андрея Брауна">
-        <div class="aboutMeParagraps">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam perferendis, ipsa. Quis expedita culpa cum quidem quod ipsum ad nisi fugiat, ducimus maiores neque incidunt, doloribus placeat voluptatibus a et.</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam perferendis, ipsa. Quis expedita culpa cum quidem quod ipsum ad nisi fugiat, ducimus maiores neque incidunt, doloribus placeat voluptatibus a et.</p>
-        </div>
-        <input type="submit" value="Скачать резюме">
-    </div>
-
-    <div class="whatICan">
-        <h3>Что я умею</h3>
-        <div>
-            <ul>
-                <li><img src="img/whatICanIcon1.png" alt="Значок_1">
-                    <h4>Веб-дизайн</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam deleniti eligendi expedita ea, est aliquid dolores ex eos minus!</p>
-                </li>
-                <li><img src="img/whatICanIcon2.png" alt="Значок_2">
-                    <h4>Разработка</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam deleniti eligendi expedita ea, est aliquid dolores ex eos minus!</p>
-                </li>
-                <li><img src="img/whatICanIcon3.png" alt="Значок_3">
-                    <h4>CEO-оптимизация</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam deleniti eligendi expedita ea, est aliquid dolores ex eos minus!</p>
-                </li>
-                <li><img src="img/whatICanIcon4.png" alt="Значок_4">
-                    <h4>Маркетинг</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam deleniti eligendi expedita ea, est aliquid dolores ex eos minus!</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="cases">
-
-        <h3>Кейсы</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, adipisci!</p>
-        <img src="img/casesPhopto.jpg" alt="Картинка кейсов">
-        <table>
-            <tr>
-                <td>
-                    <div class="casesClient">
-                        <h4>Client:</h4>
-                        <p>Какая-то компания</p>
-                    </div>
-                    <div class="casesWebsite">
-                        <h4>Website:</h4>
-                        <p>https://www.somedomain.com</p>
-                    </div>
-
-                </td>
-                <td>
-                    <div class="casesProjectName">
-                        <h4>Название проекта:</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestiae ratione quam doloremque molestias. Nemo asperiores, ipsa esse optio nostrum aperiam dolores debitis voluptatem explicabo qui assumenda error, distinctio quos!</p>
-                    </div>
-
-                </td>
-            </tr>
-        </table>
-        <input type="submit" value="Visit life site">
-    </div>
-
-    <div class="costCalculation">
-        <h3>Расчет стоимости</h3>
-        <h4>Тип сайта</h4>
-        <select>
-            <option>Пункт 1</option>
-            <option>Пункт 2</option>
-        </select>
-        <h4>Дизайн</h4>
-        <select>
-            <option>Пункт 1</option>
-            <option>Пункт 2</option>
-        </select>
-        <h4>Адаптивность</h4>
-        <select>
-            <option>Пункт 1</option>
-            <option>Пункт 2</option>
-        </select>
-        <table>
-            <tr>
-                <td>Сроки</td>
-                <td class="rightTd">0</td>
-            </tr>
-            <tr>
-                <td>Стоимость</td>
-                <td class="rightTd">0</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="someStatistic">
-        <h3>Немного статистики</h3>
-        <div>
-            <div class="someStatisticDiv">
-                <img src="img/someStatisticIcon1.jpg.png" alt="someStatisticImg1">
-                <p class="someStatisticDivP">120</p>
-                <p>Счастливых клиентов</p>
+            <div class="title_container">
+                <h1>Привет<br>Я Андрей Браун</h1>
+                <h4>Фулл стек веб-разработчик</h4>
+                <input type="submit" value="Обо мне">
+                <input type="submit" value="Мои работы">
             </div>
-            <div class="someStatisticDiv">
-                <img src="img/someStatisticIcon2.jpg.png" alt="someStatisticImg2">
-                <p class="someStatisticDivP">4600</p>
-                <p>Часов работы</p>
-            </div>
-            <div class="someStatisticDiv">
-                <img src="img/someStatisticIcon3.jpg.png" alt="someStatisticImg3">
-                <p class="someStatisticDivP">340</p>
-                <p>Проектов завершено</p>
-            </div>
-            <div class="someStatisticDiv">
-                <img src="img/someStatisticIcon4.jpg.png" alt="someStatisticImg4">
-                <p class="someStatisticDivP">23</p>
-                <p>Награды</p>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="reviews">
-        <h3>Отзывы</h3>
-        <img src="img/reviewsPhoto.png" alt="Фото клиента">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima commodi<br>iusto quasi odio est impedit nam saepe, veniam reprehenderit ducimus.</p>
-        <br>
-        <p><b>Михаил</b>, гендиректор "ГазПром"</p>
-        <div class="reviewsPoints"></div>
-    </div>
+        <section class="aboutMe">
+            <h3>Обо мне</h3>
+            <img src="img/photo.png" alt="Фото Андрея Брауна">
+            <div class="aboutMeParagraps">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam perferendis, ipsa. Quis expedita culpa cum quidem quod ipsum ad nisi fugiat, ducimus maiores neque incidunt, doloribus placeat voluptatibus a et.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam perferendis, ipsa. Quis expedita culpa cum quidem quod ipsum ad nisi fugiat, ducimus maiores neque incidunt, doloribus placeat voluptatibus a et.</p>
+            </div>
+            <input type="submit" value="Скачать резюме">
+        </section>
 
-    <div class="myContacts">
-        <h3>Мои контакты</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error voluptatem vel veritatis dolorem molestias.</p>
-        <div class="myContactsDiv">
-            <div class="point">
-                <img src="img/myContactsIcon1.png" alt="Значок геопозиции">
-                <p>Санкт-Петербург <br>Невский проспект 11</p>
-            </div>
-            <div class="mail">
-                <img src="img/myContactsIcon2.png" alt="Значок почты">
-                <p>mail@mail.com</p>
-            </div>
-            <div class="phone">
-                <img src="img/myContactsIcon3.png" alt="значок телефона">
-                <p>123-45-67</p>
-            </div>
-        </div>
-
-        <h4>Отправте мне сообщение</h4>
-        <form action="">
-            <div><input type="text" name="Name" placeholder="Имя">
-                <input type="text" name="Email" placeholder="E-mail">
-            </div>
-            <textarea name="textareaMessage" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+        <div class="whatICan">
+            <h3>Что я умею</h3>
             <div>
-                <input class="submit" type="submit" value="Отправить">
+                <ul>
+                    <li><img src="img/whatICanIcon1.png" alt="Значок_1">
+                        <h4>Веб-дизайн</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam deleniti eligendi expedita ea, est aliquid dolores ex eos minus!</p>
+                    </li>
+                    <li><img src="img/whatICanIcon2.png" alt="Значок_2">
+                        <h4>Разработка</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam deleniti eligendi expedita ea, est aliquid dolores ex eos minus!</p>
+                    </li>
+                    <li><img src="img/whatICanIcon3.png" alt="Значок_3">
+                        <h4>CEO-оптимизация</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam deleniti eligendi expedita ea, est aliquid dolores ex eos minus!</p>
+                    </li>
+                    <li><img src="img/whatICanIcon4.png" alt="Значок_4">
+                        <h4>Маркетинг</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam deleniti eligendi expedita ea, est aliquid dolores ex eos minus!</p>
+                    </li>
+                </ul>
             </div>
-        </form>
+        </div>
 
-        <!--
+        <div class="cases">
+
+            <h3>Кейсы</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, adipisci!</p>
+            <img src="img/casesPhopto.jpg" alt="Картинка кейсов">
+            <table>
+                <tr>
+                    <td>
+                        <div class="casesClient">
+                            <h4>Client:</h4>
+                            <p>Какая-то компания</p>
+                        </div>
+                        <div class="casesWebsite">
+                            <h4>Website:</h4>
+                            <p>https://www.somedomain.com</p>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="casesProjectName">
+                            <h4>Название проекта:</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt molestiae ratione quam doloremque molestias. Nemo asperiores, ipsa esse optio nostrum aperiam dolores debitis voluptatem explicabo qui assumenda error, distinctio quos!</p>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Visit life site">
+        </div>
+
+        <div class="costCalculation">
+            <h3>Расчет стоимости</h3>
+            <h4>Тип сайта</h4>
+            <select>
+                <option>Пункт 1</option>
+                <option>Пункт 2</option>
+            </select>
+            <h4>Дизайн</h4>
+            <select>
+                <option>Пункт 1</option>
+                <option>Пункт 2</option>
+            </select>
+            <h4>Адаптивность</h4>
+            <select>
+                <option>Пункт 1</option>
+                <option>Пункт 2</option>
+            </select>
+            <table>
+                <tr>
+                    <td>Сроки</td>
+                    <td class="rightTd">0</td>
+                </tr>
+                <tr>
+                    <td>Стоимость</td>
+                    <td class="rightTd">0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="someStatistic">
+            <h3>Немного статистики</h3>
+            <div>
+                <div class="someStatisticDiv">
+                    <img src="img/someStatisticIcon1.jpg.png" alt="someStatisticImg1" id="someStatisticImg1">
+                    <p class="someStatisticDivP">120</p>
+                    <p>Счастливых клиентов</p>
+                </div>
+                <div class="someStatisticDiv">
+                    <img src="img/someStatisticIcon2.jpg.png" alt="someStatisticImg2" id="someStatisticImg2">
+                    <p class="someStatisticDivP">4600</p>
+                    <p>Часов работы</p>
+                </div>
+                <div class="someStatisticDiv">
+                    <img src="img/someStatisticIcon3.jpg.png" alt="someStatisticImg3" id="someStatisticImg3">
+                    <p class="someStatisticDivP">340</p>
+                    <p>Проектов завершено</p>
+                </div>
+                <div class="someStatisticDiv">
+                    <img src="img/someStatisticIcon4.jpg.png" alt="someStatisticImg4" id="someStatisticImg4">
+                    <p class="someStatisticDivP">23</p>
+                    <p>Награды</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h3>Отзывы</h3>
+            <img src="img/reviewsPhoto.png" alt="Фото клиента">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima commodi<br>iusto quasi odio est impedit nam saepe, veniam reprehenderit ducimus.</p>
+            <br>
+            <p><b>Михаил</b>, гендиректор "ГазПром"</p>
+            <div class="reviewsPoints"></div>
+        </div>
+
+        <div class="myContacts">
+            <h3>Мои контакты</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error voluptatem vel veritatis dolorem molestias.</p>
+            <div class="myContactsDiv">
+                <div class="point">
+                    <img src="img/myContactsIcon1.png" alt="Значок геопозиции">
+                    <p>Санкт-Петербург <br>Невский проспект 11</p>
+                </div>
+                <div class="mail">
+                    <img src="img/myContactsIcon2.png" alt="Значок почты">
+                    <p>mail@mail.com</p>
+                </div>
+                <div class="phone">
+                    <img src="img/myContactsIcon3.png" alt="значок телефона">
+                    <p>123-45-67</p>
+                </div>
+            </div>
+
+            <h4>Отправте мне сообщение</h4>
+            <form action="">
+                <div><input type="text" name="Name" placeholder="Имя">
+                    <input type="text" name="Email" placeholder="E-mail">
+                </div>
+                <textarea name="textareaMessage" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <div>
+                    <input class="submit" type="submit" value="Отправить">
+                </div>
+            </form>
+
+            <!--
         <div class="socialNetwork">
             <img src="####" alt="img1">
             <img src="####" alt="img2">
@@ -209,12 +225,13 @@
             <img src="####" alt="img6">
         </div>
 -->
-    </div>
-    <section class="map">
-        <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d511634.7094048224!2d29.534292872303652!3d59.939225925535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1651680659750!5m2!1sru!2sru" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </section>
+        <section class="map">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d511634.7094048224!2d29.534292872303652!3d59.939225925535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1651680659750!5m2!1sru!2sru" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
     <!--    </div>-->
     <footer>
         <p>Copyrite&#169; Андрей Браун. design by Web</p>

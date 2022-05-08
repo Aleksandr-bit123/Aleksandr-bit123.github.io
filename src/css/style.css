@@ -610,4 +610,5 @@ footer {
 .container {
     width: 100%;
     margin: auto;
+    line-height: 0px;
 }

@@ -78,6 +78,7 @@ nav {
     height: 60px;
     background-color: #344051;
     position: fixed;
+    z-index: 100;
 }
 
 .logo {
@@ -433,6 +434,7 @@ option{
 
 .someStatistic {
     background: url(../img/someStatisticBg.jpg) center/cover no-repeat;
+    background-attachment: fixed;
     text-align: center;
     width: 100%;
     height: 500px;

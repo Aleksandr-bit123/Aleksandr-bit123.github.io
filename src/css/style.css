@@ -87,7 +87,7 @@ nav {
     transition: all 0.1s;
     transform: scale(1);
     text-decoration: none;
-    display: inline-block;
+/*    display: inline-block;*/
     /*для scale тк работает с блочными элементами*/
 }
 
@@ -196,4 +196,116 @@ nav {
         position: absolute;
         background: rgba(0,0,0,0.4);
     }
+}
+.h2 {
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+.orangeLine {    
+    border-bottom: 5px solid #d17700;
+    width: 50px;
+    margin: 34px auto;
+    white-space: nowrap;
+    text-align: center;
+    -webkit-animation: orangeLineAnimation 4s ease infinite;
+    -o-animation:  orangeLineAnimation 4s ease infinite;
+    animation:  orangeLineAnimation 4s ease infinite;
+}
+
+@keyframes orangeLineAnimation {
+    50% {
+            width: 100px;
+    }
+}
+
+.whatICan {
+    background: url(../img/whatICanBg.jpg) no-repeat center/cover fixed;
+    text-align: center;
+    width: 100%;
+    height: auto;
+/*
+    padding-top: 65px;
+    margin: 20px 0px;
+*/
+}
+
+.whatICan img {
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.someStatistic {
+    background: url(../img/someStatisticBg.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+/*
+    width: 100%;
+    height: 500px;
+    padding-top: 65px;
+*/
+}
+
+.someStatisticDivP {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.someStatisticDiv {
+    float: left;
+    margin: 0px 40px;
+}
+
+.someStatisticDiv:nth-child(n) {
+    text-transform: uppercase;
+}
+
+.someStatistic > div {
+/*    width: 888px;*/
+/*    margin: 100px auto;*/
+}
+
+.someStatistic img{
+    animation: scaleFoo 2s infinite linear;
+}
+
+@keyframes scaleFoo{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+#someStatisticImg1 {
+    animation-delay: 0.4s;
+}
+#someStatisticImg2 {
+    animation-delay: 0.8s;
+}
+#someStatisticImg3 {
+    animation-delay: 1.2s;
+}
+#someStatisticImg4 {
+    animation-delay: 1.8s;
+}
+
+.myContacts {
+    background: url(../img/myContactsBg.png) center/cover no-repeat;
+    height: 807px;
+    color: #fff;
+    text-align: center;
+}
+
+.myContacts h3 {
+    padding-top: 80px;
+    color: #fff;
+    text-indent: -65px;
 }

@@ -238,6 +238,11 @@ nav {
     color: white;
 }
 
+.aboutMe {
+/*    z-index: 100;*/
+    box-shadow: 0px -10px 20px #717171;
+}
+
 .whatICan {
     background: url(../img/whatICanBg.jpg) no-repeat center/cover;
     text-align: center;
@@ -390,3 +395,4 @@ footer {
     margin: auto;
     padding-bottom: 228px;
 }
+

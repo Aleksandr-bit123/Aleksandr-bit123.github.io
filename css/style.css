@@ -12,6 +12,13 @@ nav {
     z-index: 100;
 }
 
+@media (max-width:352px) {
+    nav {
+        height: 120px;
+        text-align: center;
+    } 
+}
+
 .logo {
     float: left;
     color: #fff;
@@ -170,6 +177,10 @@ nav {
 .aboutMe img {
     margin: 0;
     margin-bottom: 58px;
+}
+
+.aboutMe img {
+    max-width: 200px;
 }
 
 .title_container input:hover {

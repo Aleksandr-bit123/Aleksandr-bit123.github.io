@@ -12,6 +12,7 @@ nav {
     z-index: 100;
 }
 
+
 .logo {
     float: left;
     color: #fff;
@@ -20,6 +21,12 @@ nav {
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
+}
+
+@media (max-width:400px) {
+    .logo {
+        font-size: 22px;
+    }
 }
 
 @keyframes comming {
@@ -172,6 +179,10 @@ nav {
     margin-bottom: 58px;
 }
 
+.aboutMe img {
+    max-width: 200px;
+}
+
 .title_container input:hover {
     background-color: #344051;
     color: white;
@@ -240,7 +251,7 @@ nav {
 }
 
 .aboutMe {
-/*    z-index: 100;*/
+    /*    z-index: 100;*/
     box-shadow: 0px -10px 20px #717171;
 }
 
@@ -396,4 +407,3 @@ footer {
     margin: auto;
     padding-bottom: 228px;
 }
-

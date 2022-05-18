@@ -12,12 +12,6 @@ nav {
     z-index: 100;
 }
 
-@media (max-width:352px) {
-    nav {
-        height: 120px;
-        text-align: center;
-    } 
-}
 
 .logo {
     float: left;
@@ -27,6 +21,12 @@ nav {
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
+}
+
+@media (max-width:400px) {
+    .logo {
+        font-size: 22px;
+    }
 }
 
 @keyframes comming {
@@ -251,7 +251,7 @@ nav {
 }
 
 .aboutMe {
-/*    z-index: 100;*/
+    /*    z-index: 100;*/
     box-shadow: 0px -10px 20px #717171;
 }
 
@@ -407,4 +407,3 @@ footer {
     margin: auto;
     padding-bottom: 228px;
 }
-

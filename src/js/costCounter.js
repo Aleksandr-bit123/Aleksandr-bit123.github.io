@@ -64,7 +64,7 @@ arrSiteType.forEach(function (item, index, array) {
 
 function SetSiteType(name, id) {
     document.getElementById('siteTypeChoice').innerHTML = "";
-    document.getElementById('siteTypeChoice').appendChild(document.createTextNode(name));
+    document.getElementById('siteTypeChoice').appendChild(document.createTextNode("ТИП САЙТА: " + name));
     currentSiteTypeCostCoefficient = arrSiteType[id].costCoefficient;
     currentSiteTypePeriodCoefficient = arrSiteType[id].periodCoefficient;
     Calc(currentSiteTypeCostCoefficient,
@@ -87,7 +87,7 @@ arrDesign.forEach(function (item, index, array) {
 
 function SetDesign(name, id) {
     document.getElementById('designChoice').innerHTML = "";
-    document.getElementById('designChoice').appendChild(document.createTextNode(name));
+    document.getElementById('designChoice').appendChild(document.createTextNode("ДИЗАЙН: " + name));
     currentDesignCostCoefficient = arrDesign[id].costCoefficient;
     currentDesignPeriodCoefficient = arrDesign[id].periodCoefficient;
     Calc(currentSiteTypeCostCoefficient,
@@ -110,7 +110,7 @@ arrAdaptability.forEach(function (item, index, array) {
 
 function SetAdaptability(name, id) {
     document.getElementById('adaptabilityChoice').innerHTML = "";
-    document.getElementById('adaptabilityChoice').appendChild(document.createTextNode(name));
+    document.getElementById('adaptabilityChoice').appendChild(document.createTextNode("АДАПТИВНОСТЬ: " + name));
     currentAdaptabilityCostCoefficient = arrAdaptability[id].costCoefficient;
     currentAdaptabilityPeriodCoefficient = arrAdaptability[id].periodCoefficient;
     Calc(currentSiteTypeCostCoefficient,

@@ -28,12 +28,12 @@
         <nav>
             <div class="container">
                 <div class="row inline-flex justify-content-end">
-                    <div class="d-flex col-6 col-xlx-6 justify-content-xxl-center col-xl-5 justify-content-xl-center col-lg-4 justify-content-lg-center">
-<!--                       col-xxl-2 col-lg-3 col-7-->
+                    <div class=" d-flex col-6 col-xxl-3 justify-content-center justify-content-xxl-start col-xl-4 justify-content-xl-center col-lg-4 justify-content-lg-center justify-content-md-center">
+                        <!--                       col-xxl-2 col-lg-3 col-7-->
                         <div class="logo">Андрей Браун</div>
-                    </div >
-<!--                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-flex">-->
-                       <div class="col d-flex justify-content-end px-0 d-none d-lg-flex">
+                    </div>
+                    <!--                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-flex">-->
+                    <div class="col d-flex justify-content-center  justify-content-lg-center justify-content-xxl-start px-0 d-none d-lg-flex col-xxl-7 offset-xxl-2 mx-0">
                         <div class="menu">
                             <ul class="">
                                 <li><a href="#">Обо мне</a></li>
@@ -45,7 +45,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6 d-lg-none d-flex justify-content-end align-items-center">
+                    <div class="col-6 d-lg-none d-flex justify-content-center align-items-center">
                         <div class="dropdown">
                             <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 Навигация
@@ -170,7 +170,7 @@
                 </div>
 
                 <div class="row d-md-flex d-block justify-content-center">
-                    <div class="col-md-2 offset-md-2 text-md-end text-center" >
+                    <div class="col-md-2 offset-md-2 text-md-end text-center">
                         <div class="casesClient">
                             <h4>Client:</h4>
                             <p>Какая-то компания</p>
@@ -199,44 +199,28 @@
             <div class="container">
                 <div class="row d-flex justify-content-center my-5">
                     <div class="col-8 shadow-lg p-3 mb-5 bg-white rounded text-center">
-                        <h3>Расчет стоимости</h3>
+                        <h2>Расчет стоимости</h2>
                         <div class="dropdown">
-                            <a id="siteTypeChoice" class="btn btn-secondary btn-lg dropdown-toggle w-100 d-flex my-5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Тип сайта
-                            </a>
-
-                            <ul id="siteType"class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-<!--
-                                <li class="dropdown-item"><a  href="">Коммерческий сайт</a></li>
-                                <li><a class="dropdown-item" href="#">Интернет магазин</a></li>
-                                <li><a class="dropdown-item" href="#">Сайт-визитка</a></li>
--->
-                            </ul>
+                            <button id="siteTypeChoice" type="button" class="btn text-end btn-secondary btn-lg col-10 white text-left">ТИП САЙТА:</button>
+                            <button type="button" class="btn my-4 btn-danger dropdown-toggle dropdown-toggle-split btn-lg col-1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Переключатель выпадающего списка</span>
+                            </button>
+                            <ul id="siteType" class="dropdown-menu col-9" aria-labelledby="dropdownMenuLink"></ul>
                         </div>
                         <div class="dropdown">
-                            <a id="designChoice" class="btn my-10 btn-secondary btn-lg dropdown-toggle w-100 d-flex my-5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Дизайн
-                            </a>
-
+                            <button id="designChoice" type="button" class="btn text-end my-4 btn-secondary btn-lg col-10 white ">ДИЗАЙН:</button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split btn-lg col-1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Переключатель выпадающего списка</span>
+                            </button>
                             <ul id="design" class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-<!--
-                                <li><a class="dropdown-item" href="#">Black and White</a></li>
-                                <li><a class="dropdown-item" href="#">Perfect</a></li>
-                                <li><a class="dropdown-item" href="#">Foo</a></li>
--->
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <a id="adaptabilityChoice" class="btn btn-secondary btn-lg dropdown-toggle w-100 d-flex my-5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                Адаптивность
-                            </a>
-
+                            <button id="adaptabilityChoice" type="button" class="btn text-end my-4 btn-secondary btn-lg col-10 white ">АДАПТИВНОСТЬ:</button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split btn-lg col-1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Переключатель выпадающего списка</span>
+                            </button>
                             <ul id="adaptability" class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-<!--
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Mobile</a></li>
-                                <li><a class="dropdown-item" href="#">PC</a></li>
--->
                             </ul>
                         </div>
                         <div class="row d-flex ">
@@ -251,7 +235,6 @@
                             </div>
                             <div id="cost" class="col-4 text-start">0</div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -390,9 +373,9 @@
         </section>
     </main>
     <footer>
-<!--        <div class="row text-center justify-content-center">-->
-            <p>Copyrite&#169; Андрей Браун. design by Web</p>
-<!--        </div>-->
+        <!--        <div class="row text-center justify-content-center">-->
+        <p>Copyrite&#169; Андрей Браун. design by Web</p>
+        <!--        </div>-->
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/costCounter.js"></script>

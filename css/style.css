@@ -48,7 +48,7 @@ nav {
 .menu li {
     float: left;
     line-height: 60px;
-    color: #fff;
+/*    color: #fff;*/
     margin-left: 28px;
     font-size: 16px;
     text-transform: uppercase;
@@ -96,6 +96,7 @@ nav {
     transform: scale(1);
     text-decoration: none;
     /*    display: inline-block;*/
+    display: inline-block;
     /*для scale тк работает с блочными элементами*/
 }
 
@@ -108,7 +109,7 @@ nav {
 }
 
 .menu li a:active {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .white-btn:visited {
@@ -117,7 +118,7 @@ nav {
 
 .main {
     width: 100%;
-    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+    background: url(../img/boy_bad.png) 90% 100%/auto 85% no-repeat, url(../img/bg_bad.jpg) center/cover no-repeat;
     height: 100vh;
 }
 
@@ -181,6 +182,7 @@ nav {
 
 .aboutMe img {
     max-width: 200px;
+    min-width: 200px;
 }
 
 .title_container input:hover {
@@ -256,7 +258,7 @@ nav {
 }
 
 .whatICan {
-    background: url(../img/whatICanBg.jpg) no-repeat center/cover;
+    background: url(../img/whatICanBg_bad.jpg) no-repeat center/cover;
     text-align: center;
     width: 100%;
     min-height: 518px;
@@ -349,7 +351,7 @@ nav {
 }
 
 .myContacts {
-    background: url(../img/myContactsBg.png) center/cover no-repeat;
+    background: url(../img/myContactsBg_bad.png) center/cover no-repeat;
     height: 807px;
     color: #fff;
     text-align: center;
@@ -406,4 +408,21 @@ footer {
     object-fit: cover;
     margin: auto;
     padding-bottom: 228px;
+}
+
+
+.activePointMenu { 
+    color: #d17700 !important;
+    transform: scale(1.2) !important;
+}
+
+.elementWithAnimation {
+    opacity: 0;
+}
+
+.elementWithAnimation_showAnimation {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
 }
